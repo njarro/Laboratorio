@@ -9,20 +9,14 @@ package unal.poo.practica;
  *
  * @author mapii
  */
-import java.util.*;
 public class Lote {
+    
     private int nrlote;
-    private HashMap<String,Vaca>vacas;
-    private Vaca vaca;
 
-    public Lote(int nrlote, HashMap<String, Vaca> vacas) {
+    public Lote(int nrlote) {
         this.nrlote = nrlote;
-        this.vacas = vacas;
     }
 
-    
-    
-    
     public int getNrlote() {
         return nrlote;
     }
@@ -30,14 +24,8 @@ public class Lote {
     public void setNrlote(int nrlote) {
         this.nrlote = nrlote;
     }
+    
 
-    public HashMap<String, Vaca> getVacas() {
-        return vacas;
-    }
-
-    public void setVacas(HashMap<String, Vaca> vacas) {
-        this.vacas = vacas;
-    }
     
   
     

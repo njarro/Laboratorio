@@ -69,3 +69,25 @@ becker.robots.Wall 2 10 Direction.NORTH
  becker.robots.Wall 4 10 Direction.WEST
  becker.robots.Wall 3 10 Direction.WEST
  becker.robots.Wall 2 10 Direction.WEST
+#zonaordenar
+  
+ becker.robots.Wall 8 2 Direction.NORTH
+   becker.robots.Wall 8 3 Direction.NORTH
+   becker.robots.Wall 8 4 Direction.NORTH
+
+   becker.robots.Wall 8 4 Direction.EAST
+   becker.robots.Wall 9 4 Direction.EAST
+   becker.robots.Wall 10 4 Direction.EAST
+   becker.robots.Wall 11 4 Direction.EAST
+   becker.robots.Wall 12 4 Direction.EAST
+
+   becker.robots.Wall 12 2 Direction.SOUTH
+
+   becker.robots.Wall 12 4 Direction.SOUTH
+
+
+ becker.robots.Wall 8 2 Direction.WEST
+ becker.robots.Wall 9 2 Direction.WEST
+ becker.robots.Wall 10 2 Direction.WEST
+ becker.robots.Wall 11 2 Direction.WEST
+ becker.robots.Wall 12 2 Direction.WEST

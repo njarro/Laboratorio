@@ -5,6 +5,8 @@
  */
 package unal.poo.practica;
 
+import becker.robots.*;
+
 /**
  *
  * @author mapii
@@ -17,60 +19,42 @@ public class Vaca {
    private double leche;
    private int cicloReproductivo;
    private int avanceGestacion;
-   private int nro;
+   private String nro;
+   private Robot icono;
+   
+   
+   public Vaca(int pulso, double ritmoCardiaco, double temperatura, String salud, double leche, int cicloReproductivo, int avanceGestacion,String nro) {
+        this.pulso = pulso;
+        this.ritmoCardiaco = ritmoCardiaco;
+        this.temperatura = temperatura;
+        this.salud = salud;
+        this.leche = leche;
+        this.cicloReproductivo = cicloReproductivo;
+        this.avanceGestacion = avanceGestacion;
+        this.nro=nro;
+    }
 
+    public Robot getIcono() {
+        return icono;
+    }
+
+    public void setIcono(Robot icono) {
+        this.icono = icono;
+    }
+   
     public int getCicloReproductivo() {
         return cicloReproductivo;
     }
 
-    public int getNro() {
+    public String getNro() {
         return nro;
     }
 
-    public void setNro(int nro) {
+    public void setNro(String nro) {
         this.nro = nro;
     }
 
-    public Vaca(int pulso, double ritmoCardiaco, double temperatura, String salud, double leche, int cicloReproductivo, int avanceGestacion, int nro) {
-        this.pulso = pulso;
-        this.ritmoCardiaco = ritmoCardiaco;
-        this.temperatura = temperatura;
-        this.salud = salud;
-        this.leche = leche;
-        this.cicloReproductivo = cicloReproductivo;
-        this.avanceGestacion = avanceGestacion;
-        this.nro = nro;
-    }
-
-    public Vaca(int pulso, double ritmoCardiaco, double temperatura, String salud, double leche, int cicloReproductivo, int avanceGestacion) {
-        this.pulso = pulso;
-        this.ritmoCardiaco = ritmoCardiaco;
-        this.temperatura = temperatura;
-        this.salud = salud;
-        this.leche = leche;
-        this.cicloReproductivo = cicloReproductivo;
-        this.avanceGestacion = avanceGestacion;
-    }
-
-    public void setCicloReproductivo(int cicloReproductivo) {
-        this.cicloReproductivo = cicloReproductivo;
-    }
-
-    public int getAvanceGestacion() {
-        return avanceGestacion;
-    }
-
-    public void setAvanceGestacion(int avanceGestacion) {
-        this.avanceGestacion = avanceGestacion;
-    }
-   
-    public Vaca(int pulso, double ritmoCardiaco, double temperatura, String salud, double leche) {
-        this.pulso = pulso;
-        this.ritmoCardiaco = ritmoCardiaco;
-        this.temperatura = temperatura;
-        this.salud = salud;
-        this.leche = leche;
-    }
+    
 
     
 
@@ -113,7 +97,15 @@ public class Vaca {
     public void setLeche(double leche) {
         this.leche = leche;
     }
-   
+
+    public int getAvanceGestacion() {
+        return avanceGestacion;
+    }
+
+    public void setAvanceGestacion(int avanceGestacion) {
+        this.avanceGestacion = avanceGestacion;
+    }
+
     
     
     
